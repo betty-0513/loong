@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <div class="header-section">
+            <meta charset="UTF-8">
+            <title>基于八万条数据的龙图腾传承传播图景</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <section>
+                <!--每个元素都得抠图-->
+                <img src="image/龙1.png" id="long">
+                <img src="image/右上白云.png" id="xy1">
+                <img src="image/左上鸟+山.png" id="xy2">
+                <img src="image/中间遮挡云.png" id="shan">
+                <h2 id="text"><span style="font-family: 'MyFont', sans-serif;font-size: 80px;color:#2b5a5e;">八万条数据背后的</span><br><span style="font-family: 'MyFont1', sans-serif;font-size: 130px;color:#1e4b4f;">龙图腾传承传播图景</span></h2>
+            </section>
+        
+            <script>
+                let text = document.getElementById('text');
+                let long = document.getElementById('long');
+                let xy1 = document.getElementById('xy1');
+                let xy2 = document.getElementById('xy2');
+                let shan = document.getElementById('shan');
+                let header = document.getElementById('header');
+                let stopScroll = 150; // 设置停止滚动的距离，单位为像素
+        
+                window.addEventListener('scroll',function(){
+                    let value = window.scrollY;
+        
+                    if (value > stopScroll) {
+                        return;
+                    }
+        
+                    text.style.top = 40 + value * -0.5 + '%';
+                    long.style.top = value * -2.5 + 'px';
+                    xy1.style.top = value * -1.5 + 'px';
+                    xy1.style.left = value * 2 + 'px';
+                    xy2.style.top = value * -5 + 'px';
+                    xy2.style.left = value * -6 + 'px';
+        
+                    if (value >= 0) {
+                        header.style.display = 'block';
+                    } else {
+                        header.style.display = 'none';
+                    }
+                })
+            </script>
+        </div>
+    </head>
+
+    
+    <body>
+    <div class="body-section">
+    <!-- 导航栏 -->
+    <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light navbar-hidden">
+        <div class="container-fluid justify-content-end">
+            <a class="navbar-brand ml-auto"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li style="margin-left: 850px"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pt0">开篇</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pt1">视觉符号</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pt2">仪式民俗</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pt3">海外传播</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pt4">时代传承</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="image">
+        <div class="bgtitle">
+            <div id="pt0" style="margin-bottom:0px;"></div>
+            <h3 class="mtitle animate__animated animate__fadeIn animate__once animatedElement animate__slow" style="font-family: 'MyFont', Arial, sans-serif;">开篇：回望历史，溯源龙之根</h3>
+        </div>
+    </div>
+
+    <div class="sec">
+        <div id="pt0" style="margin-bottom:0px;">
+            <div style="height: 20px;"></div>
+            <p>见证了泱泱中华五千年生发历程的龙图腾不仅是中华儿女的共同文化记忆，更象征中华民族的发祥和文化肇端，传递着中华民族的价值观念与理想信仰。华夏大地的各个族群乃至全世界的华人，都被以“血缘”“地缘”为纽带的龙文化所联结，以<span class="highlight1">“龙的传人”</span>自称。
+            <p>闻一多在《伏羲考》中指出，龙图腾是由许多不同的图腾糅合成的一种综合体。据不完全统计，仅从公元前202年至公元604年之间，各类史志当中关于人类见龙的记载就已达<span class="highlight1">108次</span>。那么，龙究竟长什么样？《尔雅翼·释龙》的描述较为全面，提到龙是一种<span class="highlight1">“角似鹿、头似驼、眼似兔、项似蛇、腹似蜃、鳞似鱼、爪似鹰、掌似虎、耳似牛”</span>的生物。
+            <!--古籍弹幕-->
+            <div class="container-wrapper">
+                <div class="container" style="--t:130s">
+                    <div>
+                        <span>西北海之外，赤水之北，有章尾山。有神，人面蛇身而赤，直目正乘，其瞑乃晦，其视乃明，不食不寝不息，风雨是谒。是烛九阴，是烛龙</span>
+                        <span>龙驾兮帝服，聊翱游兮周章</span>
+                        <span>石濑兮浅浅，飞龙兮翩翩</span>
+                        <span>夏之衰曰也，褒人之神化为二龙，以同于王庭，而言曰：‘余，褒之二君也。’</span>
+                        <span>角似鹿、头似驼、眼似兔、项似蛇、腹似蜃、鳞似鱼、爪似鹰、掌似虎、耳似牛</span>
+                        <span>诸侯画交龙，一象其升朝，一象其下复也</span>
+                        <span>天子载大旂，象日月，升龙降龙</span>
+                        <span>锦有大交龙，小交龙</span>
+                    </div>
+                    <div>
+                        <span>西北海之外，赤水之北，有章尾山。有神，人面蛇身而赤，直目正乘，其瞑乃晦，其视乃明，不食不寝不息，风雨是谒。是烛九阴，是烛龙</span>
+                        <span>龙驾兮帝服，聊翱游兮周章</span>
+                        <span>石濑兮浅浅，飞龙兮翩翩</span>
+                        <span>夏之衰曰也，褒人之神化为二龙，以同于王庭，而言曰：‘余，褒之二君也。’</span>
+                        <span>角似鹿、头似驼、眼似兔、项似蛇、腹似蜃、鳞似鱼、爪似鹰、掌似虎、耳似牛</span>
+                        <span>诸侯画交龙，一象其升朝，一象其下复也</span>
+                        <span>天子载大旂，象日月，升龙降龙</span>
+                        <span>锦有大交龙，小交龙</span>
+                    </div>
+                    </div>
+                    <div class="container" style="--t:100s">
+                        <div>
+                            <span>世俗画龙之象，马头蛇尾</span>
+                            <span>马之美者，青龙之匹</span>
+                            <span>权，轩辕，黄龙体</span>
+                            <span>马八尺以上为龙</span>
+                            <span>正元元年有黑龙如狗走宣阳门</span>
+                            <span>文身，刻画其体，内墨其中，为蛟龙之状。以入水，蛟龙不害也，故日以像鳞虫也</span>
+                            <span>禹治洪水时，有神龙以尾画地，导水所注当决者，因而治之</span>
+                            <span>飞龙乘云，腾蛇游雾</span>
+                        </div>
+                        <div>
+                            <span>世俗画龙之象，马头蛇尾</span>
+                            <span>马之美者，青龙之匹</span>
+                            <span>权，轩辕，黄龙体</span>
+                            <span>马八尺以上为龙</span>
+                            <span>正元元年有黑龙如狗走宣阳门</span>
+                            <span>文身，刻画其体，内墨其中，为蛟龙之状。以入水，蛟龙不害也，故日以像鳞虫也</span>
+                            <span>禹治洪水时，有神龙以尾画地，导水所注当决者，因而治之</span>
+                            <span>飞龙乘云，腾蛇游雾</span>
+                        </div>
+                    </div>
+                    <div class="container" style="--t:120s">
+                        <div>
+                            <span>烛龙在雁门北，蔽于委羽之山，不见日。其神人面龙，身而无足</span>
+                            <span>东方朔北游钟火山，日月不照，有青龙衔烛，照山四极</span>
+                            <span>从昆仑山以北九万里，得龙伯国，人长三十丈</span>
+                            <span>五月大会龙城，祭其先、天地、鬼神</span>
+                            <span>有龙于飞，周遍天下，五蛇从之，为之丞辅。龙反其乡，得其处所，四蛇从之，得其露雨。一蛇羞之，槁死中野</span>
+                            <span>龙，鳞虫之长，能幽能明，能细能巨，能短能长，春分而登天，秋分而潜渊</span>
+                            <span>有鳞曰蛟龙，有翼曰应龙，有角曰虬龙，无角曰螭龙</span>
+                        </div>
+                        <div>
+                            <span>烛龙在雁门北，蔽于委羽之山，不见日。其神人面龙，身而无足</span>
+                            <span>东方朔北游钟火山，日月不照，有青龙衔烛，照山四极</span>
+                            <span>从昆仑山以北九万里，得龙伯国，人长三十丈</span>
+                            <span>五月大会龙城，祭其先、天地、鬼神</span>
+                            <span>有龙于飞，周遍天下，五蛇从之，为之丞辅。龙反其乡，得其处所，四蛇从之，得其露雨。一蛇羞之，槁死中野</span>
+                            <span>龙，鳞虫之长，能幽能明，能细能巨，能短能长，春分而登天，秋分而潜渊</span>
+                            <span>有鳞曰蛟龙，有翼曰应龙，有角曰虬龙，无角曰螭龙</span>
+                        </div>
+                    </div>
+                    <div class="container" style="--t:100s">
+                        <div>
+                            <span>头似驼，角似鹿，眼似兔，耳似牛，项似蛇，腹似蜃，鳞似鲤，爪似鹰，掌似虎</span>
+                            <span>雷雨晦冥，龙来哀号，声若牛吼</span>
+                            <span>水颓以绝商颜, 东至山岭十馀里间。井渠之生自此始。穿渠得龙骨, 故名曰龙首渠</span>
+                            <span>汉得土德, 宜更元, 改正朔, 易服色。当有瑞, 瑞黄龙见</span>
+                            <span>黄帝得土德, 黄龙地蚓见。夏得木德, 青龙止于郊, 草木畅茂。殷得金德, 银自山溢。周得火德, 有赤乌之符。今秦变周, 水德之时。昔秦文公出猎, 获黑龙, 此其水德之瑞</span>
+                            <span>俄有赤龙长千余尺，电目血舌，朱鳞火鬣，项掣金锁，锁牵玉柱。千雷万霆，激绕其身，霰雪雨雹，一时皆下。乃擘青天而飞去</span>
+                        </div>
+                        <div>
+                            <span>头似驼，角似鹿，眼似兔，耳似牛，项似蛇，腹似蜃，鳞似鲤，爪似鹰，掌似虎</span>
+                            <span>雷雨晦冥，龙来哀号，声若牛吼</span>
+                            <span>水颓以绝商颜, 东至山岭十馀里间。井渠之生自此始。穿渠得龙骨, 故名曰龙首渠</span>
+                            <span>汉得土德, 宜更元, 改正朔, 易服色。当有瑞, 瑞黄龙见</span>
+                            <span>黄帝得土德, 黄龙地蚓见。夏得木德, 青龙止于郊, 草木畅茂。殷得金德, 银自山溢。周得火德, 有赤乌之符。今秦变周, 水德之时。昔秦文公出猎, 获黑龙, 此其水德之瑞</span>
+                            <span>俄有赤龙长千余尺，电目血舌，朱鳞火鬣，项掣金锁，锁牵玉柱。千雷万霆，激绕其身，霰雪雨雹，一时皆下。乃擘青天而飞去</span>
+                        </div>
+                    </div>
+                </div>
+            <div style="height: 0px;"></div>
+            <p>龙作为一种文化标识，其形象常与祖先、神明、帝王所关联。从《三王历》中“龙首蛇身”的盘古，到 “龟齿龙唇”的伏羲，再到象征“君权神授”的“真龙天子”，龙被赋予了丰富的文化意涵和多样的角色表征。从春秋战国时期到清朝古籍中摘录的<span class="highlight1">350个成语释义</span>可见，龙是<span class="highlight1">是和谐智慧的象征、充满神秘色彩的神兽、是权力与威严的彰显</span>。
+            <!--成语词云-->
+            <div class="cloud-container">
+                <div class="cloud">
+                    <div class="imgBx">
+                        <img src="可视化图表/词云1.png">
+                    </div>
+                    <div class="content">
+                        <h7>和谐智慧的象征</h7>
+                        <p><span class="cloud1">龙代表智慧过人的人才、文采飘逸的文章、笔力遒劲的书法</span></p>
+                    </div>
+                </div>
+                <div class="cloud">
+                    <div class="imgBx">
+                        <img src="可视化图表/词云2.png">
+                    </div>
+                    <div class="content">
+                        <h7>充满神秘色彩的神兽</h7>
+                        <p><span class="cloud1">龙以灵活、飞动、矫健的形象出现，是多种动物的合体</span></p>
+                    </div>
+                </div>
+                <div class="cloud">
+                    <div class="imgBx">
+                        <img src="可视化图表/词云3.png">
+                    </div>
+                    <div class="content">
+                        <h7>权力与威严的彰显</h7>
+                        <p><span class="cloud1">富有气势的龙是君权神授、皇亲贵族、权力威严的代表</span></p>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 0px;"></div>
+                <p>本作品的数据来源有八部分，包括汉辞网的成语、故宫博物院的文物、Temu的龙元素商品、Youtube的龙相关视频、人民网等主流媒体的相关报道等，获得<span class="highlight1">近八万条数据</span>。
+             </div>
+            <div id="pt1" style="margin-bottom:10px;">
+                <div style="height: 10px;"></div>
+                <div class="image">
+                <div class="bg2title">
+                    <div id="pt1" style="margin-bottom:0px;"></div>
+                    <h3 class="mtitle animate__animated animate__fadeIn animate__once animatedElement animate__slow" style="font-family: 'MyFont', Arial, sans-serif;">视觉符号：聚焦文物，铸牢印记</h3>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt1" style="margin-top:40px;">
+                    <p>龙不仅是维系华夏儿女的精神纽带和中华文明的象征，其形象也被创造、发展具化为纹饰、图案，深深融入人们的日常生活。对故宫博物院的<span class="highlight1">7426件龙文物</span>进行分析，从朝代与文物数量上看，得益于御窑场的修建、烧瓷工艺的突破和艺术水准的提升，<span class="highlight1">明朝和清朝的文物数量最多</span>。</p>
+                </div>
+            </div>
+            <!--文物数量图表-->
+            <div id="iframe-container" style="margin-bottom: -180px;">
+                <iframe src='https://flo.uri.sh/visualisation/17741169/embed' frameborder="0" title='Interactive or visual content'></iframe>
+            </div>
+            <div class="supply" style="margin-top: -50px;margin-bottom: 30px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图1 各朝代文物数量面积图</p>
+                </div>
+            </div>
+            <!--文物列表超链接代码-->
+            <div class="sec" style="margin-top: 30px;">
+                <div id="pt1">
+                    <p>从颜色和纹饰上看，<span class="highlight1">白色和黑色作为基础色</span>，是绝大多数的文物的必备色彩。其次是近似橄榄黄绿、苍黄、涧石蓝、茶褐色的色彩，总体<span class="highlight1">色彩偏暗且饱和度低</span>，高饱和度的淡曙红、芽绿、桔梗紫等色彩则运用较少。</p>
+                </div>
+            </div>
+            <!--文物纹饰图表-->
+            <div class="visual-picture" style="margin-top: -10px;">
+                <img src="可视化图表/文物纹饰数量分布图.png" style="width: 40%; height: auto;"">
+            </div>
+            <div class="supply" style="margin-top: -20px;margin-bottom: 30px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图2 各纹饰数量图表</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt1">
+                    <p>最常出现的纹饰有<span class="highlight1">云龙纹、交龙纹、金龙纹</span>，这类纹饰注重龙体的协调与美观，使得龙纹兼具凶猛气势和飘逸神韵，再加上云的渲染，使龙颇有“腾云驾雾”的神秘之感。可见，古人善于借助色彩、线条、图案等表达意识所无法达到的超物质异度空间。</p>
+            <!--文物纹饰时间轴代码-->
+            <ul class="wen-container" style="margin-top: 10px;">
+                <li class="wen-item">
+                    <img src="image/汉龙.png">
+                    <p><span style="font-weight: bold;font-size: 20px; text-align: center;">汉龙</span><br><span style="font-size: 15px;">意义：真正定型的龙</span><br><span style="font-size: 15px;">外貌特征：兽足、蛇身、大耳、长耳对称、无麟甲</span></p>
+                </li>
+                <li class="wen-item">
+                    <img src="image/唐龙.png">
+                    <p><span style="font-weight: bold;font-size: 20px; text-align: center;">唐龙</span><br><span style="font-size: 15px;">表现形式：堆塑贴花</span><br><span style="font-size: 15px;">外貌特征：丹凤眼、鸟爪、蛇尾、鱼鳍背、双角多分叉、上颚上扬</span></p>
+                </li>
+                <li class="wen-item">
+                    <img src="image/明龙竖.png">
+                    <p><span style="font-weight: bold;font-size: 20px; text-align: center;">明龙</span><br><span style="font-size: 15px;">明洪武龙纹：庄严威风</span><br><span style="font-size: 15px;">明永宣龙纹：神态拘谨、老态龙钟</span></p>
+                </li>
+                <li class="wen-item">
+                    <img src="image/宋龙.png">
+                    <p><span style="font-weight: bold;font-size: 20px; text-align: center;">宋龙</span><br><span style="font-size: 15px;">螭龙：身形狭长，头爪更趋近于走兽</span><br><span style="font-size: 15px;">官样龙纹：专为皇室烧制的龙纹瓷，神态严肃、体态威严</span></p>
+                </li>
+                <li class="wen-item">
+                    <img src="image/元龙.png">
+                    <p><span style="font-weight: bold;font-size: 20px; text-align: center;">元龙</span><br><span style="font-size: 15px;">外貌特征：元青花龙纹多生动传神、大气洒脱、龙睛圆瞪、龙爪锋利、样式繁多</span></p>
+                </li>
+                <li class="wen-item">
+                    <img src="image/明龙.png">
+                    <p><span style="font-weight: bold;font-size: 20px; text-align: center;">明龙</span><br><span style="font-size: 15px;">明洪武龙纹：俊逸洒脱、隽永鲜活</span><br><span style="font-size: 15px;">明永宣龙纹：恣意张扬、威风矫健</span><br><span style="font-size: 15px;">明成弘龙纹：轻快活泼、滑稽可爱</span></p>
+                </li>
+                <li class="wen-item">
+                    <img src="image/清龙.png">
+                    <p><span style="font-weight: bold;font-size: 20px; text-align: center;">清龙</span><br><span style="font-size: 15px;">清康熙龙纹：庄严威武、龙头凶恶似鬼</span><br><span style="font-size: 15px;">清雍正龙纹：体态端庄、神态威严，以如意状卷云纹、鹿角状火焰纹装饰</span></p>
+                </li>
+                <li class="wen-item">
+                    <img src="image/清龙2.png">
+                    <p><span style="font-weight: bold;font-size: 20px; text-align: center;">清龙</span><br><span style="font-size: 15px;">清乾隆龙纹：多为起舞、漂游、放松状态</span><br><span style="font-size: 15px;">外清同光龙纹：像蚯蚓，趾爪似被禁锢</span></p>
+                </li>
+            </ul>
+            <div class="supply" style="margin-top: -20px;margin-bottom: 30px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图3 各个朝代对应的龙纹特点</p>
+                </div>
+            </div>
+            <div class="sec" style="margin-top: 30px;">
+                <div id="pt1" style="margin-bottom:0px;">
+                    <p>从文物类型上看，<span class="highlight1">陶瓷占27.6%</span>，数量最多，其次是织绣和帝后玺册。但不论龙的形象是作为礼器上的纹饰，帝王衣袍上的图案，还是墓葬中的器皿，龙图腾始终作为一种隐喻符号，于无形当中<span class="highlight1">象征权威和尊贵</span>。</p>
+                </div>
+            </div>
+            <!--文物类型图表-->
+            <div class="visual-picture" style="margin-top: -10px;">
+                <img src="可视化图表/各类型文物数量占比.png" style="width: 30%; height: auto;"">
+            </div>
+            <div class="supply" style="margin-top: -20px;margin-bottom: 30px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图4 文物类型占比</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt1" style="margin-bottom:0px;">   
+                    <p>从新石器时代质朴粗犷的龙图腾印迹，到各朝各代愈加完整多彩的龙图腾样式，璀璨的历史长河不断丰富着龙的形象，充实龙的内涵，强化龙的地位。不同时期的龙图腾是中国人民<span class="highlight1">对于美的追求的缩影</span>，也是各个时代<span class="highlight1">经济、文化面貌的重要佐证</span>。</p>
+                </div>
+            </div>
+        </div>
+        <div id="pt2" style="margin-bottom:10px;">
+            <div style="height: 10px;"></div>
+            <div class="image">
+                <div class="bg2title">
+                    <div id="pt2" style="margin-bottom:0px;"></div>
+                    <h4 class="mtitle animate__animated animate__fadeIn animate__once animatedElement animate__slow" style="font-family: 'MyFont', Arial, sans-serif;">仪式民俗：探秘龙节，凝聚认同</h4>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt2" style="margin-bottom:0px;margin-top: 10px;">
+                    <p>龙图腾不仅是皇室贵胄身份的象征，而且是平民百姓生产生活、节日节庆必不可少的要素。作为汇聚各民族文化基因的龙，是共筑中华民族精神家园的纽带。</p>
+                    <p>在统计到的<span class="highlight1">30个龙节</span>中，虽然节日名称、举行时间、民俗仪式存在差异，但皆<span class="highlight1">以“龙崇拜”为核心，“祭祀”为主要内容，反映“健康顺遂、五谷丰登、太平盛世”等共同的心理诉求</span>，如普米族会将涂有酥油的50个面偶投入龙潭以期盼风调雨顺，汉族会通过献祭酬谢敢于“反腐败”的“乌龙老爷”，满族由船长领头举杯祭祀海龙王以祈祷海事顺利。</p>
+                    <p>针对同一节日，各地各民族的习俗既有共同点也有相异点，这些差异性成为特定民族或族群的文化标识。以<span class="highlight1">“龙舟节”</span>为例，傣族、侗族等民族都会进行“龙舟竞渡”，但苗族会举行开划仪式，即在有龙神之位的井边或沟边放置一张桌脚绑着去掉树叶树皮的树枝的方桌，并绑上雨伞、红布、纸钱和一把青草，以扫邪敬神。</p>
+                </div>
+            </div>
+            <!--仪式内容图表-->
+            <div id="iframe-container" style="margin-bottom: -180px;">
+                <iframe src='https://flo.uri.sh/visualisation/17874228/embed' frameborder="0" title='Interactive or visual content'></iframe>
+            </div>
+            <div class="supply" style="margin-top: -60px;margin-bottom: 30px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图5 各民族习俗内容共现网络关系图</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt2" style="margin-bottom:0px;">
+                    <p>从非物质文化遗产网可知，与龙有关的<span class="highlight1">非遗共100个</span>。在五个批次的公布时间中，2008年和2011年公布的非遗项目最多，主要申报地则集中于浙江、广东、湖南等<span class="highlight1">华东和中南地区</span>。</p>
+                </div>
+            </div>
+            <!--申报地图表-->
+            <div id="iframe-container" style="margin-top: -185px;margin-bottom: -185px;">
+                <iframe src='https://flo.uri.sh/visualisation/17850543/embed' frameborder="0" title='Interactive or visual content' style="width: 680px"></iframe>
+            </div>
+            <div class="supply" style="margin-top: -60px;margin-bottom: 30px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图6 与龙相关非遗申报地情况</p>
+                </div>
+            </div>
+            <!--公布批次图表-->
+            <div class="visual-picture">
+                <img src="可视化图表/不同批次申报龙元素非遗数量.png" style="width: 38%; height: auto;margin-top: -10px;margin-bottom: 10px;" />
+            </div>
+            <div class="supply" style="margin-top: -20px;margin-bottom: 30px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图7 不同批次申报龙相关非遗情况</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt2" style="margin-bottom:0px;">
+                    <p>其中涵盖九个类别，<span class="highlight1">传统舞蹈占比最大，为48%</span>，其次是民俗和传统技艺。传统舞蹈以龙舞为主，经过全国普查，发现全国各地<span class="highlight1">龙舞超过100种</span>，仅浙江、湖南等省份就有几十种。</p>
+                </div>
+            </div>
+            <!--类别与名称图表-->
+            <div id="iframe-container" style="margin-top: -80px;margin-bottom: -60px;">
+                <iframe src='https://flo.uri.sh/visualisation/17878668/embed' frameborder="0" title='Interactive or visual content' style="width: 680px;height: 680px;"></iframe>
+            </div>
+            <div class="supply" style="margin-top: -60px;margin-bottom: 30px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图8 与龙相关非遗具体类别占比</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt2" style="margin-bottom:0px;margin-top: -10px;">
+                    <p>龙节需要集体参与的特征彰显了龙文化下中华民族的集体主义精神，印证了五十六个民族“像石榴籽一样紧紧抱在一起”的客观事实。</p>
+                </div>
+            </div>
+        </div>
+        <div id="pt3" style="margin-bottom:10px;">
+            <div style="height: 10px;"></div>
+            <div class="image">
+                <div class="bg2title">
+                    <div id="pt3" style="margin-bottom:0px;"></div>
+                    <h4 class="mtitle animate__animated animate__fadeIn animate__once animatedElement animate__slow" style="font-family: 'MyFont', Arial, sans-serif;">海外传播：放眼全球，传递价值</h4>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt3" style="margin-bottom:0px;">
+                    <p>不论从历史向度深探，还是从视觉符号和仪式民俗的维度出发，都能看到龙文化的基因已深深融进每位华夏儿女的血脉，也让诠释着中华民族自强不息精神的龙图腾成为讲好中国故事的重要抓手。那么，龙图腾在政治、经济、文化三方面的海外传播情况究竟如何？</p>
+                    <p>政治方面，以“龙”为关键词在人民网、新华网、央视网三大网站的国际新闻板块进行检索，获得2024年1月1日至3月14日的<span class="highlight1">新闻报道共418篇</span>。</p>
+                    <p>在海外领导人送祝福方面，<span class="highlight1">欧洲的祝福数量最多</span>，其次是亚洲和非洲，送祝福的领导人身份包括但不限于国王、总统、省长等，祝福内容紧紧围绕<span class="highlight1">“友谊”“发展”“繁荣”</span>等关键词。</p>
+                </div>
+            </div>
+            <!--送祝福图表-->
+            <div class="bless-wrapper" style="margin-top: 70px;">
+                <div class="bless" style="--delay:-1;">
+                    <div class="word">
+                        <div class="img"><img src="image/斯蒂芬·欧伦斯.png" alt=""></div>
+                        <div class="detail">
+                            <span class="name">斯蒂芬·欧伦斯</span> <span class="title" style="color: #7e9c99;font-size: 18px;">(美中关系全国委员会会长)</span>
+                            <p>希望美中两国以龙的精神行事，用勇气和力量进一步推动美中关系向好。如果我们能做到这一点，龙年将是和平、繁荣和充满活力的一年。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bless" style="--delay:0;">
+                    <div class="word">
+                        <div class="img"><img src="image/埃马纽埃尔·马克龙.png" alt=""></div>
+                        <div class="detail">
+                            <span class="name">埃马纽埃尔·马克龙</span> <span class="title" style="color: #7e9c99;font-size: 18px;">(法国总统)</span>
+                            <p>祝愿全世界庆祝农历新年的朋友们新年快乐，身体健康，万事如意。龙年象征着创新和创意，我们在法国准备的精彩活动也正是如此! </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bless" style="--delay:1;">
+                    <div class="word">
+                        <div class="img"><img src="image/赛塔·他威信.png" alt=""></div>
+                        <div class="detail">
+                            <span class="name">赛塔·他威信</span> <span class="title" style="color: #7e9c99;font-size: 18px;">(泰国总理)</span>
+                            <p>农历春节是泰国华人和中国人民最重要的节日，祝愿泰中两国贸易与投资能够顺顺利利,祝愿两国互免签证政策能够促进两国间往来更加便利快捷</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bless" style="--delay:2;">
+                    <div class="word">
+                        <div class="img"><img src="image/西里尔·拉马福萨.png" alt=""></div>
+                        <div class="detail">
+                            <span class="name">西里尔·拉马福萨</span> <span class="title" style="color: #7e9c99;font-size: 18px;">(南非总统)</span>
+                            <p>祝愿龙年象征的活力、希望和机遇遍及中国的广袤土地以及在南非和全世界的华侨华人。亲爱的中国兄弟姐妹们和全世界的华侨华人，祝愿大家新春快乐、万事如意！</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bless" style="--delay:2;">
+                    <div class="word">
+                        <div class="img"><img src="image/布尔纳比奇日.png" alt=""></div>
+                        <div class="detail">
+                            <span class="name">布尔纳比奇日</span> <span class="title" style="color: #7e9c99;font-size: 18px;">(塞尔维亚总理)</span>
+                            <p>期待塞中两国之间的“铁杆”友谊在新的一年里能够进一步深化。值此新春佳节之际，向中国人民送上新春祝福，同时也祝愿共建“一带一路”倡议取得更大的发展与成功。 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="supply" style="margin-top: 10px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图9 部分海外国家领导人送祝福内容</p>
+                </div>
+            </div>
+
+
+            <div class="sec">
+                <div id="pt3" style="margin-bottom:0px;margin-top: 40px;">
+                    <p>在海内外龙年合作方面，得益于“一带一路”战略的发展，<span class="highlight1">亚洲区域内的合作数量最多</span>，包括老挝、沙特、阿联酋等国家，其次是非洲和欧洲。</p>
+                </div>
+            </div>
+            <!--合作数量图表-->
+            <div id="iframe-container" style="margin-top: -180px;margin-bottom: -200px;">
+                <iframe src='https://flo.uri.sh/visualisation/17878175/embed' frameborder="0" title='Interactive or visual content' style="width: 550px;height: 380px;"></iframe>
+            </div>
+            <div class="supply" style="margin-top: -50px;margin-bottom: 10px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图10 中国与各洲国家合作数量</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt3" style="margin-bottom:0px;">
+                    <p>合作领域方面，<span class="highlight1">经济领域的合作需求居于首位</span>，文化、绿色发展、能源等领域合作也屡见不鲜。例如，我国与俄罗斯开展“西伯利亚力量2号”天然气管道项目、与吉布提建立阿尔塔医院、中国人民解放军国际军事合作代表团访问马尔代夫。</p>
+                </div>
+            </div>
+            <!--合作领域图表-->
+            <div class="visual-picture">
+                <img src="可视化图表/合作领域数量分布.png" style="width: 30%; height: auto;" />
+            </div>
+            <div class="supply" style="margin-top: -20px;margin-bottom: 10px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图11 中国与海外各国合作领域数量</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt3" style="margin-bottom:0px;">
+                    <p>经济方面，对Temu平台销往<span class="highlight1">49个国家的24482件龙元素商品</span>进行分析。根据商品名称关键词云图，“New Year”“Spring Festival”等词显著，可见龙元素商品与中国春节关联密切。“Decoration” “Gift”“Pendant”“Envelope”等词表明商家偏向选择装饰物、礼物、吊坠、红包等龙元素商品销往海外。“lucky”“happy”“traditional”则凸显了龙元素赋予商品的内涵与寓意。</p>
+                </div>
+            </div>
+            <!--商品名称图表-->
+            <div id="iframe-container" style="margin-top: -130px;margin-bottom: -150px;">
+                <iframe src='https://flo.uri.sh/visualisation/17852379/embed' frameborder="0" title='Interactive or visual content' style="width: 500px;height: 470px;"></iframe>
+            </div>
+            <div class="supply" style="margin-top: -40px;margin-bottom: 10px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图12 Temu平台龙商品名称关键词</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt3" style="margin-bottom:0px;">
+                    <p>截至2024年3月11日，该平台的龙元素商品<span class="highlight1">总销量接近900万</span>。对各国整体购买量进行分析，居于前5的分别是美国、马来西亚、澳大利亚、墨西哥、新西兰，其中销往美国的3D打印中国龙装饰的销量为20000个，中国龙红包销量达19000个。</p>
+                    <p>各国整体评论量居于前5的分别是巴林、美国、马来西亚、澳大利亚、爱尔兰，其中巴林的龙年福字窗花的评论量有195532条，中国结吊坠的评论量有187445条。</p>
+                </div>
+            </div>
+            <!--销量与评论量图表-->
+            <div id="iframe-container" style="margin-top: -170px;margin-bottom: -160px;">
+                <iframe src='https://flo.uri.sh/visualisation/17851089/embed' frameborder="0" title='Interactive or visual content' style="width: 750px;height: 380px;"></iframe>
+            </div>
+            <div class="supply" style="margin-top: -190px;margin-bottom: 10px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图13 Temu平台各个国家的龙商品销量和评论情况</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt3" style="margin-bottom:0px;">
+                    <p>从商品价格上看，绝大多数商品原价位于20美元以下，极少数商品原价高于100美元，且位于<span class="highlight1">5美元以下的商品最畅销</span>。</p>
+                </div>
+            </div>
+            <!--价格图表图表-->
+            <div class="visual-picture">
+                <img src="可视化图表/不同价格段的销量状况.png" style="width: 40%; height: auto;" />
+            </div>
+            <div class="supply" style="margin-top: -30px;margin-bottom: 25px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图14 Temu平台龙商品价格分布情况</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt3" style="margin-bottom:0px;">
+                    <p>在获取的数据中，除2553件商品维持原价外，其余商品均有1%至96%的折扣，其中<span class="highlight1">折扣力度位于50%-79%区间内的商品最多</span>，占商品总数的59.3%。可见，龙元素商品的优惠力度大。将折扣与商品销量进行关联发现，销量最高，即销量为5000-10000个的商品进行61%-80%的折扣优惠会吸引更多海外消费者。</p>
+                </div>
+            </div>
+            <!--折扣与销量图表图表-->
+            <div id="iframe-container" style="margin-top: -180px;margin-bottom: -190px;">
+                <iframe src='https://flo.uri.sh/visualisation/17856447/embed' frameborder="0" title='Interactive or visual content' style="width: 390px;height: 390px;"></iframe>
+            </div>
+            <div class="supply" style="margin-top: -150px;margin-bottom: 10px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图15 Temu平台龙商品折扣与销量关系图</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt3" style="margin-bottom:0px;">
+                    <p>从商品类别上看，<span class="highlight1">家居装饰类的商品最多</span>，包括桌面装饰、电视柜摆件、富贵盆等。其次是节日装饰类、个人装饰类、玩具。可见，装饰类的龙元素商品最受海外受众欢迎。</p>
+                </div>
+            </div>
+            <!--商品大类小类图表-->
+            <div id="iframe-container" style="margin-top: -150px;margin-bottom: -175px;">
+                <iframe src='https://flo.uri.sh/visualisation/17857839/embed' frameborder="0" title='Interactive or visual content' style="width: 440px;height: 440px;"></iframe>
+            </div>
+            <div class="supply" style="margin-top: -150px;margin-bottom: 10px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图16 Temu平台龙商品类别占比</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt3" style="margin-bottom:0px;">
+                    <p>文化方面，在统计的<span class="highlight1">62个国家的龙年线下活动</span>中，<span class="highlight1">非遗</span>是最主要的活动内容，具体包括书法、戏剧、剪纸、武术等项目。据相关报道显示，中国文化和旅游部组织四川自贡彩灯企业在法国、挪威、匈牙利等<span class="highlight1">近20个国家和地区的80多个城市举办了“欢乐春节 全球彩灯点亮”活动</span>，观展游客预计达3000万人次。</p>
+                </div>
+            </div>
+            <!--非遗大类小类图表-->
+            <div id="iframe-container" style="margin-top: -190px;margin-bottom: -200px;">
+                <iframe src='https://flo.uri.sh/visualisation/17858709/embed' frameborder="0" title='Interactive or visual content' style="width: 850px;height: 850px;"></iframe>
+            </div>
+            <div class="supply" style="margin-top: -170px;margin-bottom: 30px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图16 海外国家龙年非遗活动类别</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt3" style="margin-bottom:0px;">
+                    <p>除非遗活动外，<span class="highlight1">舞龙、舞蹈、民乐演奏</span>也深受海外受众欢迎。不少国家别出心裁，玩出新花样。如荷兰在有轨电车车身展示“2024欢乐春节”吉祥龙和“你好！中国”熊猫喷绘图案、巴西累西腓的民众戴上亲手制作的龙头庆新春、墨西哥的“自行车生肖装饰大赛”吸引超过1500人参与……可见，春节的“国际范儿”也越来越足，丰富多彩的活动让不同国家的人们共享中国文化，<span class="highlight1">海外“春节热”</span>不断升温背后，是世界对春节这一中国传统节日认识的不断深化。</p>
+                </div>
+            </div>
+            <!--线下活动图表-->
+            <div id="iframe-container" style="margin-top: -145px;margin-bottom: -140px;">
+                <iframe src='https://flo.uri.sh/visualisation/17858817/embed' frameborder="0" title='Interactive or visual content' style="width: 480px;height: 480px;"></iframe>
+            </div>
+            <div class="supply" style="margin-top: -150px;margin-bottom: 35px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图17 海外国家龙年线下活动类别</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt3" style="margin-bottom:0px;">
+                    <p>从Youtube平台<span class="highlight1">7215条含龙视频</span>可见，播放量达到10000以上的视频有3570条，占比49.5%，其中有<span class="highlight1">551条破百万</span>。</p>
+                </div>
+            </div>
+            <!--youtube视频播放量图表-->
+            <div class="visual-picture" style="margin-top: -20px;margin-bottom: -10px;">
+                <img src="可视化图表/视频发布时间情况.png" style="width: 40%; height: auto;" />
+            </div>
+            <div class="supply" style="margin-top: -30px;margin-bottom: 35px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图18 Youtube平台龙相关视频推出时间段统计图</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt3" style="margin-bottom:0px;">
+                    <p>此类破百万的视频一般带有<span class="highlight1">“龙年民俗”“龙年”</span>等标签，呈现出以下两大特征。一是<span class="highlight1">通过写实拍摄展现龙节日的相关习俗</span>，如李子柒的视频围绕玫瑰洗沙粽等四种粽子从采摘箬竹到包裹馅料再到锅煮的全过程，并介绍了洒雄黄、戴五彩手链等端午节习俗，收获了2051万的观看量和39万的点赞量。二<span class="highlight1">以卡通形式刻画龙年场景</span>，如小猪佩奇围绕制作龙年红包、穿红衣过春节、打鼓舞龙等情节展开，收获了2794万的观看量和8.4万的点赞量。</p>
+                    <p>视频评论<span class="highlight1">情感以积极为主</span>，可见海外网友对龙相关视频持有支持、喜爱等正面态度。</p>
+                </div>
+            </div>
+            <!--youtube情感图表-->
+            <div class="visual-picture" style="margin-top: -40px;margin-bottom: -20px;">
+                <img src="可视化图表/视频评论情感_.png" style="width: 40%; height: auto;" />
+            </div>
+            <div class="supply" style="margin-top: -40px;margin-bottom: 35px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图19 Youtube平台龙相关视频情感</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt3" style="margin-bottom:0px;">
+                    <p>对具体评论内容进行分析。从整体上看，海外受众对中国龙的形象及相关内容表现出“beautiful”“amazing”“wow”等惊叹，并对<span class="highlight1">龙的文化、历史、民俗舞蹈</span>等呈现出浓厚的兴趣。可见，这些方面将是往后在新媒体平台宣传中国龙图腾、发扬中国龙精神的重要切入口。只有以海外受众的喜好为导向，才能更好地讲述中国故事、传播中国声音。</p>
+                </div>
+            </div>
+            <!--youtube动画词云-->
+            <div id="iframe-container" style="margin-top: -140px;margin-bottom: -80px;">
+                <iframe src='https://flo.uri.sh/visualisation/17874853/embed' frameborder="0" title='Interactive or visual content' style="width: 550px;height: 550px;"></iframe>
+            </div>
+            <div class="supply" style="margin-top: -100px;margin-bottom: 35px;">
+                <div id="pt1">
+                    <p style="color: #73716c;text-align:center;font-size: 15px;">图20 Youtube平台龙相关视频评论词频共现关系图</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt3" style="margin-bottom:-30px;">
+                    <p>随着愈加多的国产动画作品上线国外主流媒体平台，国产动画出海已是大势所趋。在<span class="highlight1">7部含中国龙的国产动画</span>中，《西游记之大圣归来》自2015年推出后，三年时间内陆续在俄罗斯、澳大利亚等10国上映；《哪吒之魔童降世》在北美上映后，以单片369万美元的票房创下发行公司的新纪录。</p>
+                    <p>就对国产动画的评价进行分析可见，海外受众首先关注<span class="highlight1">国漫内容</span>，包括哪吒、孙悟空等中国特有人物形象。其次重视影片的音乐、画面。最后是对动画背后<span class="highlight1">传递的价值观抒发看法</span>。如“It has a good story, stunning visuals, good character's development, and much more.”（它有一个好的故事、令人惊叹的视觉效果、良好的角色发展等）。可见，国产动画是推动龙元素等文化图腾海外传播的重要载体，担负文化输出的重要作用，在制作时需<span class="highlight1">将传统文化与现代思维相结合，注重动画的故事内容、剧情发展和视觉效果</span>。</p>
+        <!--动漫介绍卡片代码-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                      <div class="poster">
+                        <img src="pic/pic1.jpeg" alt="">
+                      </div>
+                      <div class="details">
+                        <!-- <img src="images/avtarlogo.png" alt="" class="logo"> -->
+                        <div class="logo">
+                          <a href="https://movie.douban.com/subject/26277313/">西游记之大圣归来</a>
+                        </div>
+                        <h3>Monkey King: Hero is Back</h3>
+                        <div class="rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <span>8.3</span>
+                        </div>
+                        <div class="tags">
+                          <span>剧情</span>
+                          <span>奇幻</span>
+                        </div>
+                        <div class="info">
+                          <p>
+                              龙的形象出自《山海经》，动画形象是属于中国观念中的龙的外在形象。形象创造既融合古代传统文化元素也加入现代时尚的效果，重塑后的海报中，龙的神情、龙鳞、形态等与我国古代的盘龙造型十分相近。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                      <div class="poster">
+                        <img src="pic/pic2.jpeg" alt="">
+                      </div>
+                      <div class="details">
+                        <!-- <img src="images/avtarlogo.png" alt="" class="logo"> -->
+                        <div class="logo">
+                          <a href="https://movie.douban.com/subject/1307315/">哪吒闹海</a>
+                        </div>
+                        <h3>Prince Nezha's Triumph Against Dragon King</h3>
+                        <div class="rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <span>9.2</span>
+                        </div>
+                        <div class="tags">
+                          <span>奇幻</span>
+                          <span>冒险</span>
+                        </div>
+                        <div class="info">
+                          <p>
+                            龙在影片中虽作为反面角色，但具有呼风唤雨、喷火降雪的能力，赋予龙以无穷力量。体现了古代人们相信龙具有保佑五谷丰登、风调雨顺的能力，在中国古代的农业生产中，龙是人们祈祷丰收和祭祀神灵的对象。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="poster">
+                            <img src="pic/pic3.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                          <!-- <img src="images/avtarlogo.png" alt="" class="logo"> -->
+                          <div class="logo">
+                            <a href="https://movie.douban.com/subject/2156771/">哪吒传奇</a>
+                          </div>
+                          <h3>The Legend of Nezha</h3>
+                          <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>9.1</span>
+                          </div>
+                          <div class="tags">
+                            <span>儿童</span>
+                            <span>奇幻</span>
+                            <span>冒险</span>
+                          </div>
+                          <div class="info">
+                            <p>
+                              龙在动画中为蓝色，可腾云驾雾，也可盾水潜行。在中国古代，蓝龙则常常被用来代表水，与中国文化中的“水是情”的思想相呼应。龙王中作为国传说中最有权力的龙，是海洋和江河的守护神，掌管着水的力量和生命的源泉。
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="poster">
+                            <img src="pic/pic4.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                          <!-- <img src="images/avtarlogo.png" alt="" class="logo"> -->
+                          <div class="logo">
+                            <a href="https://movie.douban.com/subject/26794435/">哪吒之魔童降世</a>
+                          </div>
+                          <h3>Ne Zha</h3>
+                          <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>8.4</span>
+                          </div>
+                          <div class="tags">
+                            <span>剧情</span>
+                            <span>喜剧</span>
+                            <span>奇幻</span>
+                          </div>
+                          <div class="info">
+                            <p>
+                              敖丙作为三龙子，出生时背负了整个龙族的希望。他有着温润如玉的一面，恩怨分明，也在龙族复兴大业受到威胁时对陈塘关百姓痛下杀手，亦正亦邪的心理变化，让其形象更加丰满。
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="poster">
+                            <img src="pic/pic5.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                          <!-- <img src="images/avtarlogo.png" alt="" class="logo"> -->
+                          <div class="logo">
+                            <a href="https://movie.douban.com/subject/27148208/">西行记</a>
+                          </div>
+                          <h3>Journey to the West</h3>
+                          <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>7.4</span>
+                          </div>
+                          <div class="tags">
+                            <span>剧情</span>
+                            <span>奇幻</span>
+                          </div>
+                          <div class="info">
+                            <p>
+                              动画里的龙为青龙，在中国古代神话传说中为“天之四灵”之一的东方之神，其由来由来与自然天象有关，主要源于上古时代人们对星辰运行的认识以及农耕文化。据《星经》记载，青龙形态生有羽翼，由二十八宿中的东边七星宿所组成。
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="poster">
+                            <img src="pic/pic6.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                          <!-- <img src="images/avtarlogo.png" alt="" class="logo"> -->
+                          <div class="logo">
+                            <a href="https://movie.douban.com/subject/2156775/">西游记</a>
+                          </div>
+                          <h3>Journey to the West: Legends of the Monkey King</h3>
+                          <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>9.3</span>
+                          </div>
+                          <div class="tags">
+                            <span>古装</span>
+                            <span>奇幻</span>
+                          </div>
+                          <div class="info">
+                            <p>
+                              白龙马并不是普通的凡间之马，而是一条小白龙，骨子里有贵族的傲气，同时又责任心强，任劳任怨，明知实力悬殊，还要殊死一战。
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",/*滚的模式*/
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,/*边框阴影*/
+            },
+            /*pagination: {
+                el: ".swiper-pagination",
+            },*/
+            });
+        </script>
+        
+        <div id="pt4" style="margin-bottom:10px;">
+            <div style="height: 10px;"></div>
+            <div class="image">
+                <div class="bg2title">
+                    <div id="pt4" style="margin-bottom:0px;"></div>
+                    <h5 class="mtitle animate__animated animate__fadeIn animate__once animatedElement animate__slow" style="font-family: 'MyFont', Arial, sans-serif;">时代传承：立足当代，讲好故事</h5>
+                </div>
+            </div>
+            <div class="sec">
+                <div id="pt4" style="margin-bottom:0px;">
+                    <p>不论是回望历史云烟，还是聚焦文物载体，亦或是寻根探秘龙节，都可以看到龙是维系华夏儿女的精神纽带和中华文明的象征。党的二十大报告指出，要增强中华文明的传播力影响力，推动中华文化更好走向世界。龙图腾素作为中华文化符号，不失为<span class="highlight1">展现可信可爱可敬的中国形象的重要载体</span>。</p>
+                    <p>政治上的多领域合作与友好交流，经济上的互惠共赢与密切往来，文化上的亲身体验与深入了解，呈现出中华龙文化的多元包容特质。随着“Chinese dragon”被收入新版《牛津英语词典》，龙年春节正式成为联合国节假日，<span class="highlight1">龙图腾的海外影响力不断攀升</span>。以此为契机，深挖龙图腾精神价值，创新龙图腾传播途径，将龙图腾推向国际舞台势在必行。</p>
+                    <p>或许，可以在一个个影像作品与一场场线下活动中，寻得传播龙图腾的有效脉络。</p>
+            </div>
+            <!--展览纪录片卡片代码-->
+            <div class="container1">
+                <div class="background-block"></div>
+                <!-- <div class="mask"></div> -->
+                <div id="slide">
+                    <div class="item" style="background-image: url('./pic/p1.png');">
+                        <div class="content">
+                            <div class="name">妖怪传</div>
+                            <div class="des">引入了专家和文献资料，采用动态漫画加真人讲述相结合的形式，展现了“妖怪文化”在中国历史上伴随华夏文明的成长与变迁。</div>
+                            <button class="document_tag">纪录片</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url('./pic/p2.jpeg');">
+                        <div class="content">
+                            <div class="name">如果国宝会说话</div>
+                            <div class="des">该纪录片首次用文物讲文物，用文物梳理文明。这一集介绍了在内蒙古翁牛特旗发现的一件神秘玉器，玉器雕刻的动物鼻头上翘、眼睛微凸、颚下有网格状的纹理，项背上似鬣毛，有飞腾的动感，造型简素，玉质温润光洁。</div>
+                            <button class="document_tag">纪录片</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url('./pic/p3.jpeg');">
+                        <div class="content">
+                            <div class="name">山海经奇</div>
+                            <div class="des">这条龙来自近八百年前的《九龙图》，来自五千至六千年前的远古中国，周身光洁，头部长吻修目，鬣鬃飞扬，躯体卷曲若钩，被誉为“中华第一龙”。红山文化出土的龙形器物不止一件，龙的崇拜，从远古时代就开始了。</div>
+                            <button class="document_tag">纪录片</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url('./pic/p4.jpeg');">
+                        <div class="content">
+                            <div class="name">来龙去脉</div>
+                            <div class="des">聚焦龙这一神奇“物种”的生物特征与文化形象，从龙的视角出发，打通历史学、文学、考古学、生物学的“任督二脉”，抽丝剥茧，通过别开生面又不失严谨的视听语言，展现它的“来龙去脉”。</div>
+                            <button class="document_tag">纪录片</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url('./pic/p5.jpeg');">
+                        <div class="content">
+                            <div class="name">龍行天下興<span>：從中國古代龍圖騰到當代龍文化藝術傳承大展</span></div>
+                            <div class="des">展览中包括从古至今百余件中国龙文化传承相关展品，从珍贵古董到现当代艺术家精选作品，通过不同的艺术表现形式展现出中国龍文化的传承精神。</div>
+                            <button class="expression_tag">艺术展览</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url('./pic/p6.jpeg');">
+                        <div class="content">
+                            <div class="name">
+                                龙飞凤舞<span>——甲辰迎春收藏展</span>
+                            </div>
+                            <div class="des">展出由私人收藏家收藏的名人书写的含“龙”字书法作品50余幅，以及以龙和凤为主题的玉器、瓷器、织绣等展品。</div>
+                            <button class="expression_tag">艺术展览</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url('./pic/p7.png');">
+                        <div class="content">
+                            <div class="name">
+                                喜乐龙年<span>——文物里的中国龙特展</span>
+                            </div>
+                            <div class="des">共汇集中国民间稀珍文物遗产多达245件，特别邀请著名设计团队打造多维体验展示空间和3大沉浸式亲子互动体验区，以古老且时尚、寓教于乐的新展览模式，给观众带来不一样的观展体验。</div>
+                            <button class="expression_tag">艺术展览</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="s_button" >&lt;</div>
+                    <div class="s_button">&gt;</div>
+                </div>
+            </div>
+            <div class="sec1" style="margin-top: -250px;margin-bottom: 50px;">
+                <p>【后记】</p>
+                <p>泱泱中华，龙的传人，肩负中华之复兴大任</p>
+                <p>乾坤之间，龙腾四海，尽显华夏之文化精髓</p>
+                <p>我们希冀以青年之声、数据之力</p>
+                <p>描绘中国龙图腾对内价值与对外传播的全面图景</p>
+                <p>推动愈加多的年轻人加入传承与传播龙文化的行列中</p>
+                <p>让中国的自信龙吟穿越千山万水</p>
+                <p>唱进世界人民的心间</p>
+            </div>
+        </div>
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            // 获取开篇内容的位置
+            var pt0 = document.getElementById('pt0');
+            var pt0Rect = pt0.getBoundingClientRect();
+            // 如果开篇内容滚动到页面顶部，则显示导航栏
+            if (pt0Rect.top <= 0) {
+                document.querySelector('.navbar').classList.add('navbar-fixed');
+                document.querySelector('.navbar').style.display = 'block';
+            } else {
+                document.querySelector('.navbar').classList.remove('navbar-fixed');
+                document.querySelector('.navbar').style.display = 'none';
+            }
+        });
+    </script>
+
+    <div class="footer">
+        <div style="width: 60%; text-align: left; margin: 0 auto;">
+        <p>团队成员：司徒颖琳 林姿延 黄婧岚 张雨铮</p>
+        <p>指导老师：赵甜芳 谷虹</p>
+        <p>数据来源：[1] 汉辞网</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2] 故宫博物院数字文物库</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3] 中国非物质文化遗产网</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4] 人民网、新华网、央视网</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5] Youtube平台</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6] Temu电商平台</p>
+        <p>参考资料：[1] 姚莉,屠飞鹏.“龙”的传统文化内涵及其当代价值解析[J].唐都学刊,2022,38(04):88-94. </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2] 王宪昭.龙图腾：中华民族的共同文化记忆[J].中国民族教育,2023(06):62-64.DOI:10.16855/j.  cnki.zgmzjy.2023.06.009.</p>   
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3] 潘东东,杨博钊.互嵌与共构：龙文化与中华民族共同体意识的共生路径研究[J].濮阳职业技术学院学报,  2024,37(02):16-20.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4] 陈佳慧.龙图腾：图像·符号·记忆[J].九江学院学报(社会科学版),2021,40(03):64-67+72.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5] 王洪斌,胡晓琦,顾丹,等. 龙文化地图与中国龙的精神特质[C]//中国环球文化出版社,华教创新（北京）文化传媒有限公司.2019年南国博览学术研讨会论文集（一）.[出版者不详],2019:4.DOI:10.26914/c.cnkihy.2019.057012.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6] 澎湃新闻：《走进博物馆——文物里的中国龙》</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7] 搜狐新闻：《苗族龙船节，独特的传统习俗多多，场面热闹有趣》</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[8] 中国文化研究院：《民俗节日中少不了的龙》</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[9] 网易新闻：《你知道龙年的哪些习俗吗》</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[10] 东方网：《中国非遗“扬帆出海”，促进世界文明互鉴》</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1 1] 新华网：《综合消息丨温暖迎春 全球共庆中国年——龙年春节庆祝活动在多国举行》</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[12] 澎湃新闻：《龙腾四海｜“中国年”渐成“世界节”，各国同庆龙年新春》</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[13] 新华网：《传承龙文化 弘扬龙精神》</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[14] 大河网：《弘扬中华龙文化 提升国家软实力》</p>
+    </div>
+        <div style="width: 60%; text-align: center; margin: 0 auto; margin-top: 2em; margin-bottom: -30px;">
+            <p style="text-align: center;">2024 © 暨南大学 新闻与传播学院</p>
+        </div>
+    </div>
+    </body>
+</html>
+
+<script src="js/wen.js"></script>
+<script src="js/script.js"></script>
